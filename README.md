@@ -73,8 +73,8 @@ Add an address to a specific cohort. If the address is already a member, only th
   
   // {address or identity}:{weight} mapping
   "members":{
-    "0x0000000000000000000000000000000000000400":1,
-    "0x0000000000000000000000000000000000000500":2
+    "0x0000000000000000000000000000000000000400":"1",
+    "0x0000000000000000000000000000000000000500":"2"
   },
 	
   // Signature value for the request
