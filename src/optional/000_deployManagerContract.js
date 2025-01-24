@@ -6,6 +6,9 @@ const request = require('request-promise');
 
 require("dotenv").config();
 
+// This script executes the deploySiliconProtocolManager() function.
+// For full details and additional functions, refer to the implementation at:
+// https://github.com/0xSilicon/opencohort-contracts/blob/main/contracts/deployer/SiliconProtocolManagerDeployer.sol
 (async() => {
     const config = JSON.parse(await request.get(`${OPEN_COHORT_ENDPOINT}/common/config`)).data;
     const managerDeployerAddress = config.SiliconProtocolManagerDeployer;

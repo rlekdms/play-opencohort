@@ -29,13 +29,13 @@
     - Wallet Owner Example
         - [Send Wallet Assets](#send-wallet-assets)
     - [Functions Not Included in the Examples](#functions-not-included-in-the-examples)
-
+- [**Open Silicon Procotol Manager (Optional)**](#open-silicon-procotol-manager-optional)
 
 
 ## Overview
  OpenCohort is a separate closely integrated with Silicon that categorizes users to support business applications, manage Web3 communities, and enhance social interactions with like-minded individuals.  
 
-This is a collection of **script examples for deploying and managing OpenCohort and Named Wallets**. Basic functionality required for initial setup is provided as script examples. If you'd like to add more features, feel free to refer to the [contract](#https://github.com/0xSilicon/opencohort-contracts) and [API documentation](#https://api-cohort.silicon.network/docs) provided in the "Information" section below and customize as needed.  
+This is a collection of **script examples for deploying and managing OpenCohort and Named Wallets**. Basic functionality required for initial setup is provided as script examples. If you'd like to add more features, feel free to refer to the [**contract**](#https://github.com/0xSilicon/opencohort-contracts) and [**API documentation**](#https://api-cohort.silicon.network/docs) provided in the "Information" section below and customize as needed.  
 
 
 ## Information
@@ -418,7 +418,7 @@ const signingHash = makeEthereumSignedHash(dataHash);
 These scripts serve as examples for deploying or setting up the Named Wallet service. Since they are primarily used for sending transactions, you will need to ensure that **you have enough ETH to cover the gas fees**. For detailed explanations of the functions, please refer to the [link](#https://docs.silicon.network/about/opencohort/build-on-opencohort/developer/cohort).
 
 ### Interacting with [`WalletFactory.sol`](#https://github.com/0xSilicon/opencohort-contracts/blob/main/contracts/namedWallet/WalletFactory.sol) 
-- Contract Address: TBD
+- Contract Address: `0x5F53CD20ecE6605c62a3525E1031b1d87Be05D80`
   
 #### Deploy Wallet
 Send transaction for deploy Named Wallet. You can check the detailed information of the deployed Named Wallets by running the [001_checkWalletList.js](./src/wallet/signer/001_checkWalletList.js). 
@@ -496,3 +496,10 @@ function getDataHash(address virtualAddress, address owner) external view return
 ```
 function changeTaxRate(uint256 rate_) external onlySigner
 ```
+
+<br>
+<br>
+
+## Open Silicon Procotol Manager (Optional)
+The Open Silicon Protocol Manager streamlines the management of both Cohort and Named Wallet services, allowing users to deploy and manage them together in one place. By integrating these services, it simplifies the deployment process, reduces complexity, and ensures easier coordination and scalability across multiple accounts and configurations. A simple script is provided to [deploy](./src/optional/000_deployManagerContract.js) the Silicon Protocol Manager Contract and [execute](./src/optional/100_executeManagerContract.js) its functions.
+

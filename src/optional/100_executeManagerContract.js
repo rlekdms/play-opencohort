@@ -5,7 +5,8 @@ const request = require('request-promise');
 
 require("dotenv").config();
 
-// Interacting with the SiliconProtocolManager.sol
+// For more functions and details, refer to the full implementation at:
+// https://github.com/0xSilicon/opencohort-contracts/blob/main/contracts/utils/SiliconProtocolManager.sol
 
 (async() => {
     try {
